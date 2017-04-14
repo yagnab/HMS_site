@@ -29,6 +29,9 @@ class Room(models.Model):
     def __str__(self):
         return "Room: " + str(self.room_number)
 
+    def random_func(self):
+        return "wut is this lmao"
+
 ##class Bed(models.Model):
 ##    #relations
 ##    room = models.ManyToManyField(Room)
