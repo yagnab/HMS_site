@@ -29,10 +29,6 @@ class Room(models.Model):
     def __str__(self):
         return "Room: " + str(self.room_number)
 
-    #remove later
-    def test_function(self):
-        return "This should be removed"
-
 ##class Bed(models.Model):
 ##    #relations
 ##    room = models.ManyToManyField(Room)
