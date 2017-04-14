@@ -1,0 +1,13 @@
+{% extends 'hms/header.html' %}
+
+{% block content %}
+	{% for hotel in hotels %}
+		<li>
+			<a href='{% url 'hotel_views' hotel.pk %}'>{{hotel.name}}<\a>
+			<li>{{hotel.street_num}}</li>
+			<li> {{hotel.street_name}}</li>
+			<li> {{hotel.town_name}}</li>
+			<li> {{hotel.postcode}}</li>
+		<li>
+	{% endfor %}
+{% endblock %}
